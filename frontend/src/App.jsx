@@ -5,7 +5,7 @@ import axios from "axios"
 import prism from "prismjs"
 import rehypeHighlight from "rehype-highlight"
 import "highlight.js/styles/github-dark.css";
-import Markdown from "react-markdown"
+import Markdown from "react-markdown";
 import './App.css'
 
 function App() {
@@ -27,6 +27,7 @@ async function reviewCode() {
     { code }
   );
   setReview(response.data);
+
 }
 
   return (
@@ -53,7 +54,19 @@ async function reviewCode() {
 onClick={reviewCode}
 className="review">Review</div>
 </div>
-<div className="right"><Markdown rehypePlugins={[rehypeHighlight]}>{review}</Markdown></div>
+<div className="right">
+  <Markdown
+    rehypePlugins={[rehypeHighlight]}
+    components={{
+      p: ({ node, ...props }) => (
+        <p style={{ whiteSpace: "pre-wrap" }} {...props} />
+      ),
+    }}
+  >
+    {review}
+  </Markdown>
+</div>
+
    </main>
    </>
   )

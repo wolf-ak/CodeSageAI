@@ -56,3 +56,20 @@ main .right{
   font-size: 1.5rem;
   overflow: auto;
 }
+.right pre {
+  background: #181818 !important;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.right code {
+  background: #232323 !important;
+  color: #ffb86c !important;
+  border-radius: 0.3rem;
+  padding: 0.2em 0.4em;
+  font-size: 1em;
+}
