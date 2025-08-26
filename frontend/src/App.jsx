@@ -53,7 +53,7 @@ async function reviewCode() {
 onClick={reviewCode}
 className="review">Review</div>
 </div>
-<div className="right"><Markdown rehypePlugins={[rehypeHiglight]}>{review}</Markdown></div>
+<div className="right"><Markdown rehypePlugins={[rehypeHighlight]}>{review}</Markdown></div>
    </main>
    </>
   )
