@@ -3,7 +3,7 @@ import "prismjs/themes/prism-tomorrow.css"
 import Editor from "react-simple-code-editor"
 import axios from "axios"
 import prism from "prismjs"
-import rehypeHiglight from "rehype-highlight"
+import rehypeHighlight from "rehype-highlight"
 import "highlight.js/styles/github-dark.css";
 import Markdown from "react-markdown"
 import './App.css'
